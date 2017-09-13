@@ -1,0 +1,15 @@
+from Pen import *
+
+pen = Pen((5, 5), (1, 1))
+pen.pd()
+pen.fd(2)
+pen.rt(90)
+pen.fd(2)
+pen.rt(90)
+pen.fd(2)
+pen.rt(90)
+pen.fd(2)
+pen.pu()
+pen.rt(90)
+pen.fd(2)
+pen.draw()

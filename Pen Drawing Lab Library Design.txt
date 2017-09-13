@@ -1,0 +1,22 @@
+create grid
+init takes desired amount of points on x and y
+	add one to each so there is buffer space on all sides of the screen
+divide width of screen by x to get position of first line. Increment position to get other line positions
+do the same for height and y
+get the intersections of the lines to create the drawable points for the cursor
+
+line intersection points:
+	seperate lines into vertical and horizontal
+	for every vertical line:
+		iterate through horizontal lines and test for intersection of two lines
+
+Point class holds index of position point in vertical point list and horizontal point list so it knows where it is. also holds current rotation 
+based on 360 to hold direction
+	
+	funcs:
+		pu: draw = false
+		pd: draw = true
+		fd(x): move to next index in line list based on direction
+		lt(x): must be 90 || 180 || 270, rotate current direction towards the left
+		rt(x): must be 90 || 180 || 270, rotate current direction towards the right (just put "-" in front of x to rotate to the right)
+	
